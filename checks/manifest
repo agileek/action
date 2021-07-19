@@ -21,6 +21,7 @@ function checkCondition () {
 function checkRun () {
   repoPath=$(cat "$GITHUB_ACTION_PATH"/data/path)
   manifest=$(find "$repoPath" -name manifest.json)
+  echo "PLOP ${repoPath} TOTO ${manifest}"
   if [ ! -f "$manifest" ]; then
     checkError "manifest.json file not found"
     exit 1
