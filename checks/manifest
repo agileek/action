@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 URL="https://hacs.xyz/docs/publish/include#check-manifest"
 GROUP="manifest"
 
